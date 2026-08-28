@@ -2,22 +2,18 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField]
+    private int playerScore;
+        public int PlayerScore { get { return playerScore; } set { playerScore = value; } }
+
     public static GameManager instance;
 
-    [SerializeField] private int playerScore;
-
-    public int PlayerScore
-    {
-        get { return playerScore; }
-        set { playerScore = value; }
-    }
-
-    private void Awake()
+    void Awake()
     {
         instance = this;
     }
 
-    private void Start()
+    void Start()
     {
 
     }
