@@ -131,7 +131,6 @@ GameObject:
   - component: {fileID: 240970878}
   - component: {fileID: 240970877}
   - component: {fileID: 240970876}
-  - component: {fileID: 240970880}
   m_Layer: 0
   m_Name: RightUp
   m_TagString: Untagged
@@ -232,33 +231,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1743224056}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &240970880
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240970875}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,7 +681,6 @@ GameObject:
   - component: {fileID: 815947842}
   - component: {fileID: 815947841}
   - component: {fileID: 815947840}
-  - component: {fileID: 815947844}
   m_Layer: 0
   m_Name: Down
   m_TagString: Untagged
@@ -810,33 +781,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1743224056}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &815947844
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815947839}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,6 +1029,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3620ac4eb02fa345bf5213a9dd4802d, type: 3}
+--- !u!1 &1073262673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6437555060656416882, guid: c3620ac4eb02fa345bf5213a9dd4802d, type: 3}
+  m_PrefabInstance: {fileID: 1073262672}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1188355176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,7 +1046,6 @@ GameObject:
   - component: {fileID: 1188355179}
   - component: {fileID: 1188355178}
   - component: {fileID: 1188355177}
-  - component: {fileID: 1188355181}
   m_Layer: 0
   m_Name: LeftUp
   m_TagString: Untagged
@@ -1198,33 +1146,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1743224056}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1188355181
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188355176}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1339841520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,7 +1217,6 @@ GameObject:
   - component: {fileID: 1500802407}
   - component: {fileID: 1500802406}
   - component: {fileID: 1500802405}
-  - component: {fileID: 1500802409}
   m_Layer: 0
   m_Name: Up
   m_TagString: Untagged
@@ -1397,33 +1317,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1743224056}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1500802409
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1500802404}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1503558158
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,7 +1329,6 @@ GameObject:
   - component: {fileID: 1503558161}
   - component: {fileID: 1503558160}
   - component: {fileID: 1503558159}
-  - component: {fileID: 1503558163}
   m_Layer: 0
   m_Name: LelfDown
   m_TagString: Untagged
@@ -1537,33 +1429,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1743224056}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1503558163
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503558158}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1575316649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,7 +1441,6 @@ GameObject:
   - component: {fileID: 1575316652}
   - component: {fileID: 1575316651}
   - component: {fileID: 1575316650}
-  - component: {fileID: 1575316654}
   m_Layer: 0
   m_Name: RighDown
   m_TagString: Untagged
@@ -1677,33 +1541,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1743224056}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1575316654
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575316649}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1663223781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1931,7 +1768,6 @@ GameObject:
   - component: {fileID: 1938829905}
   - component: {fileID: 1938829904}
   - component: {fileID: 1938829903}
-  - component: {fileID: 1938829907}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -2033,33 +1869,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1743224056}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1938829907
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938829902}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1987439577
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,6 +1909,7 @@ MonoBehaviour:
   - {fileID: 1047916219}
   - {fileID: 1663223781}
   ballPrefab: {fileID: 6437555060656416882, guid: c3620ac4eb02fa345bf5213a9dd4802d, type: 3}
+  cueBall: {fileID: 1073262673}
 --- !u!4 &1987439579
 Transform:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -6,11 +7,17 @@ public class GameManager : MonoBehaviour
     private int playerScore;
     public int PlayerScore { get { return playerScore; } set { playerScore = value; } }
 
-        [SerializeField]
-        private GameObject[] ballPositions;
+    [SerializeField]
+    private GameObject[] ballPositions;
 
-        [SerializeField]
-        private GameObject ballPrefab;
+    [SerializeField]
+    private GameObject ballPrefab;
+
+    [SerializeField]
+    private GameObject cueBall;
+
+    [SerializeField]
+    private float xInput = 0f;
 
     public static GameManager instance;
 
@@ -32,7 +39,17 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+            ShootBall();
 
+        if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
+            xInput = -0.1f;
+        else if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
+            xInput = 0.1f;
+        else
+            xInput = 0f;
+
+        RotateBall();
     }
 
     private void SetBall(BallColor col, int i)
@@ -40,5 +57,19 @@ public class GameManager : MonoBehaviour
         GameObject obj = Instantiate(ballPrefab, ballPositions[i].transform.position, Quaternion.identity);
         Ball b = obj.GetComponent<Ball>();
         b.SetColorAndPoint(col);
+    }
+
+    private void ShootBall()
+    {
+        Rigidbody rd = cueBall.GetComponent<Rigidbody>();
+        rd.AddRelativeForce(Vector3.forward * 50, ForceMode.Impulse);
+    }
+
+    private void RotateBall()
+    {
+        if (cueBall != null)
+        {
+            cueBall.transform.Rotate(new Vector3(0f, xInput, 0f));
+        }
     }
 }
