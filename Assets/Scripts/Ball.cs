@@ -19,6 +19,9 @@ public class Ball : MonoBehaviour, IPointerClickHandler
     private int point;
     public int Point { get { return point; } }
 
+    // เพิ่ม Property สำหรับส่งค่าสีออกไปให้ GameManager อ่านได้
+    public BallColor BallColor { get { return color; } }
+
     [SerializeField]
     private BallColor color;
     [SerializeField]
@@ -48,6 +51,9 @@ public class Ball : MonoBehaviour, IPointerClickHandler
 
     public void SetColorAndPoint(BallColor col)
     {
+        // บันทึกค่า enum ใส่ตัวแปร color
+        color = col;
+
         switch (col)
         {
             case BallColor.White:
